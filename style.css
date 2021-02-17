@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+:root{
+    --mainblue: #87cefa;
+    --mainyellow: rgba(249, 228, 148, 0.5);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+body{
+    font-family: "Kaushan Script", cursive;
+    padding-top: 69px ;
+}
+
+/* ------NAVBAR KISMI--------- */
+.span-a{
+    font-style: italic;
+    color: #fff;
+
+}
+.baslıktext{
+    font-style: italic;
+    font-family: 'Kaushan Script', cursive;
+}
+.animation_text h1 {
+    text-align:center;
+    color:#373150;
+    font-size:60px;
+    font-weight:500;
+    line-height:70px;
+    letter-spacing:0
+}   
+
+.animation_text h1 span {
+    color: #801c3e;
+}
+    
+@media(max-width:768px) {
+    .animation_text h1 {
+    font-size:30px
+}
+} 
+/* -------NAVBAR BİTİŞ------- */
+/* classı sag-icon-bar olanların özeliklerinin kodlandıgı yerin başlangıcı  */
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900";
+*{box-sizing:
+    border-box
+}
+.sag-icon-bar{
+    position:fixed;
+    right: -40px;
+    top:auto;
+    bottom: 10%;
+    width:50px;
+    padding:0;
+    z-index:99;
+    border-radius:10px 0 0 10px;
+    font-family: 'Roboto', 'sans-serif';
+    transition: 0.5s
+}
+.sag-icon-bar:hover{
+    transition:  0.5s;
+    right: 0;
+}
+.sag-icon-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background:#111;
+    box-shadow: -5px 10px 10px -3px rgba(0,0,0,0.75);
+    border-top-left-radius:15px;
+    border-bottom-left-radius:15px
+}
+.sag-icon-bar ul li{
+    width: 30px;
+    height: 30px;
+    margin:5px;
+    border-radius: 30px;
+}
+.sag-icon-bar ul li a{
+    width: 100%;
+    height: 100%;
+    display:block;
+    border-radius: 30px;
+    border: 3px solid #fff;
+}
+.beyaz{background:white}
+.mavi{background:#0750be}
+.kirmizi{background:#801c3e}
+.pembe{background:#493670}
+.sari{background:#f3b941}
+.yesil{background:#377179}
+/* classı sag-icon-bar olanların özeliklerinin kodlandıgı yerin bitişi  */
+
+
+/* BÜYÜK RESİMLERİN BOYUTLANDIRILDIGI YERİN BAŞLANGICI */
+.resimboyut{
+    height: 500px;
+    width: 1250px !important;
+    /* justify-content: center;  */
+    /* text-align: center; */
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+.degisim{
+    transition:  1s ease-in-out;
+}
+
+/* BÜYÜK RESİMLERİN BOYUTLANDIRILDIGI YERİN BİTİŞİ */
+#cubuk {
+    position: fixed;
+    top: auto;
+    bottom: auto;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    z-index: 1000;
+    background: #a2214d;
+}   
+
+
+
+
+/* HAKKIMIZDA BÖLÜMÜ BAŞLANGIÇ */
+.hakkimizda{
+    background-color: white;
+    height: auto;
+    /* margin: 5px; */
+
+}
+/* .max-height{
+    min-height: calc(100vh - 76px);
+    background: linear-gradient(var(--mainblue), var(--mainyellow)),
+    url("../img/arkaplancoin.jpg") center/cover fixed no-repeat;
+    position: relative;
+} */
+.ayrac{
+    border: none;
+    border-top: 3px solid black;
+    max-width: 250px;
+    /* height: 5px; */
+    margin: 25px auto;
+    z-index: 5;
+}
+
+#igri{
+    position: relative; /* akışı bozmadan yukardan veya asagdan konumalndırma özeliği */
+    top: -55px;
+    border: solid white;
+    background-color: white;
+    /* z-index: ; */
+}
+#ibeyaz{
+    position: relative; /* akışı bozmadan yukardan veya asagdan konumalndırma özeliği */
+    top: -50px;
+    border: solid #d4d5d8;
+    background-color: #d4d5d8;
+}
+.hakkimizda-p{
+    letter-spacing: 1px;
+    font-size: 22px;
+}
+/* HAKKIMIZDA BÖLÜMÜ BİTİŞ */
+/* PİYASALAR BAŞLINGIÇ */
+#piyasalar{
+    background-color: #d4d5d8;
+    height: 750px !important;
+
+}
+.stickyTop{
+    background-color: #212529!important;
+}
+/* PİYASALAR BİTİŞ */
+#kaynaklar{
+    background-color: white; 
+     height: 600px !important;
+}
+
+.btcnavbar{
+    width: 30px!important;
+    float: right!important;
+    position: relative;
+    bottom: 9px;
+    left:30px; 
+}
+.liste,thead,tbody,tr,th,td{
+    font-size: large;
+}
+.liste td{
+    font-size: 1.25rem !important;
+    color: #0ba336;
+}
+.container{
+    padding-bottom: 5rem;
+}
+.stickyTop{
+    position:sticky;
+    top: 0rem;
+    z-index: 99;
+    color: floralwhite;
+    background-color: black;
+}
+  /*---------FOOTER------ */
+  .footer { 
+    background:#212529!important;
+    width:100%; 
+    height:269px;
+    float:left;
+    color:white; 
+    font-family:arial;
+}
+.footer #kutu b {
+    font-size:  14px;
+}
+* {margin:0px;padding:0px;}
+.footer_container{
+    width:868px; 
+    height:175px; 
+    margin:30px auto;
+}
+.footer-ul {
+    list-style-type:none;
+    margin:17px 0;
+    padding:0px;
+}
+#kutu {
+    width:auto; 
+    height:125px; 
+    float:left;
+}
+.footer-li {
+    float:left;
+    font-family:tahoma; 
+    font-size:15px; 
+    margin-bottom:8px; 
+    clear:left; 
+    color:#949798; 
+}
+#kutu:last-child li {
+    float:left;
+    clear:none;
+    margin-right:10px;
+}
