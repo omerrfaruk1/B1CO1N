@@ -1,6 +1,6 @@
 class Request{
 	async get(url){
-		const response = await fetch(url); // Response Yapısı
+	const response = await fetch(url); // Response Yapısı
         const data = await response.json(); // Json Objesi
         return data;
 	}
@@ -15,10 +15,10 @@ function getData(){
 	.then(x1 => {
 		for (i=0; i<fiyat.length; i++){
 			updatePrice(i,x1);
-			}; 
-		})
+		}; 
+	})
 	.catch(err => console.log(err));
-	}
+}
 setInterval(getData,2000);
 
 async function updatePrice(i,x1){
